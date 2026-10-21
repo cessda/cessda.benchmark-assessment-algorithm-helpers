@@ -194,33 +194,6 @@ function validateTestReferences() {
     return url;
   }
 
-  function checkUrlFetchable(row, url) {
-    if (!url) return;
-
-    try {
-      const res = UrlFetchApp.fetch(url, {
-        muteHttpExceptions: true,
-        followRedirects: true
-      });
-
-      const status = res.getResponseCode();
-
-      if (status >= 400) {
-        CONFIG.fetchFailures.push({
-          row,
-          url,
-          reason: `HTTP ${status}`
-        });
-      }
-    } catch (err) {
-      CONFIG.fetchFailures.push({
-        row,
-        url,
-        reason: `Fetch failed: ${err.message}`
-      });
-    }
-  }
-
   // ── Phase 3d: URL VALIDATION (PARALLEL) ────────────────────────────────
 
   const sioScanEndRow = stopMarkerRow ? stopMarkerRow - 1 : maxRows;
@@ -385,14 +358,6 @@ function validateTestReferences() {
 
   SpreadsheetApp.getUi().alert(lines.join('\n'));
 }
-
-// ─────────────────────────────────────────────
-// Helper (unchanged)
-// ─────────────────────────────────────────────
-function alertAndReturn(msg) {
-  SpreadsheetApp.getUi().alert(msg);
-}
-
 
 /**
  * Scans an array of { token, row } objects and returns a Map of tokens that

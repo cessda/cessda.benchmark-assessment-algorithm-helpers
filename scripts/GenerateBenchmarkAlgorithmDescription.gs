@@ -761,39 +761,6 @@ function fetchUrl(url) {
 // ── Sheet helpers ─────────────────────────────────────────────────────────────
 
 
-/**
-
- * Returns the first 1-based row number to process (the row after the
-
- * startMarker) by searching the pre-read column values array.
-
- *
-
- * @param {string[]} values Column values, index 0 = row 1.
-
- * @returns {number|null}   Row number after the marker, or null if not found.
-
- */
-
-function findStartRowFromArray(values) {
-
- for (let i = 0; i < values.length; i++) {
-
-  if (values[i].trim() === CONFIG.startMarker) {
-
-   Logger.log(`"${CONFIG.startMarker}" found at row ${i + 1}`);
-
-   return i + 2;
-
-  }
-
- }
-
- Logger.log(`"${CONFIG.startMarker}" not found`);
-
- return null;
-
-}
 
 
 /**

@@ -20,13 +20,15 @@ function onOpen() {
  *
  * @property {string} sourceSheetName      Name of the sheet that contains the data.
  * @property {string} targetSheetName      Name of the sheet used for report output
- *                                         (reserved for future use).
+ *                                         (cleared on each run).
  * @property {string} sourceColumn         Column letter whose cells contain the
  *                                         start/stop marker text.
  * @property {string} startMarker          Cell text that marks the row after which
  *                                         token scanning begins.
  * @property {string} stopMarker           Cell text that marks the end of the token
  *                                         block and the start of the expression block
+ * @property {string} guidanceColumn       Column letter holding the guidance links for
+ *                                         each condition.
  * @property {number} requestDelayMs       Milliseconds to pause between HTTP requests to avoid
  *                                         rate-limiting. Increase if you see HTTP 429 responses.
  * @property {number} maxConsecutiveEmpty  Number of consecutive empty cells that signals the
@@ -41,7 +43,7 @@ const CONFIG = {
   stopMarker:      'Description',
   requestDelayMs:      1000,
   maxConsecutiveEmpty: 3,
-  metricNameJsonPath: 'metadata.name',
+  guidanceColumn:  'F',
   fetchFailures: []
 };
 

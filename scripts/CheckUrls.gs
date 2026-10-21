@@ -19,7 +19,7 @@ function validateGuidanceUrls() {
   // ── Column letters ────────────────────────────────────────────────────────
   const sourceColIndex   = columnLetterToIndex(CONFIG.sourceColumn); // B → 2
   const conditionColLetter = indexToColumnLetter(sourceColIndex + 1); // C
-  const guidanceColLetter  = 'F';
+  const guidanceColLetter  = CONFIG.guidanceColumn;
 
   // ── Find stopMarker row ───────────────────────────────────────────────────
   const maxRows = sourceSheet.getLastRow();

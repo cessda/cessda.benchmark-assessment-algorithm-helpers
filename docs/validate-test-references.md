@@ -10,7 +10,7 @@ It also holds general-purpose helper functions used by other scripts.
 ## What it checks
 
 | Check | Stops the run on failure |
-| ---| --- |
+| --- | --- |
 | Declared tokens contain only letters, digits and underscores | Yes |
 | Declared tokens have no leading or trailing whitespace | Yes |
 | Tokens in expressions contain only permitted characters | Yes |
@@ -37,7 +37,7 @@ The script reads three columns of the source sheet. Column letters are
 derived from `CONFIG.sourceColumn` in [MenuAndConfig.gs](menu-and-config.md).
 
 | Column | Role |
-| ---| --- |
+| --- | --- |
 | A | Declared tokens, one per row (the column before the source one) |
 | B | Markers and Test GUID hyperlinks (the source column) |
 | C | Boolean expressions (the column after the source one) |
@@ -75,7 +75,7 @@ every run.
 ## Functions
 
 | Function | Purpose |
-| ---| --- |
+| --- | --- |
 | `validateTestReferences()` | Menu entry point; performs the validation. |
 | `collectInvalidCharTokens()` | Maps tokens with invalid characters to rows. |
 | `alertAndReturn()` | Shows an alert dialogue. |

@@ -38,7 +38,7 @@ creating it if necessary. **An existing sheet of that name is cleared on every
 run.** The report has four columns:
 
 | Column | Header | Content |
-|---|---|---|
+| ---| ---| --- |
 | A | Metric name(s) | Title of each metric, separated by semicolons |
 | B | Metric URL(s) | URL of each metric, separated by semicolons |
 | C | Test URL | The Test GUID hyperlink |
@@ -85,7 +85,7 @@ An example test record:
 ## Functions
 
 | Function | Purpose |
-|---|---|
+| ---| --- |
 | `generateFAIRMetricsReport()` | Menu entry point. |
 | `extractMetricsData()` | Loops over rows and resolves each test. |
 | `findSIO000233Objects()` | Finds the metric URLs in a test record. |
@@ -134,7 +134,7 @@ Run these manually from the Apps Script editor. Results appear in the
 execution log.
 
 | Function | Purpose |
-|---|---|
+| ---| --- |
 | `debugSourceColumn()` | Logs the first 20 rows of the source column |
 | `debugSingleTest()` | Resolves one test; edit `DEBUG_TEST_URL` to change it |
 

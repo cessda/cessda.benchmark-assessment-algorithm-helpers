@@ -36,7 +36,7 @@ The script uses these locations, derived from `CONFIG` in
 [MenuAndConfig.gs](menu-and-config.md):
 
 | Item | Location |
-|---|---|
+| ---| --- |
 | Source sheet | `CONFIG.sourceSheetName` |
 | Stop marker | `CONFIG.stopMarker` in `CONFIG.sourceColumn` |
 | Condition column | The column after `CONFIG.sourceColumn` (C) |
@@ -73,7 +73,7 @@ accepted as a fallback.
 ## Functions
 
 | Function | Purpose |
-|---|---|
+| ---| --- |
 | `validateGuidanceUrls()` | Menu entry point; performs the whole check. |
 | `sheet_getValue()` | Reads a cell from a column letter and row number. |
 

@@ -26,7 +26,7 @@ here to adapt the scripts to a differently structured spreadsheet; no other
 code needs to change.
 
 | Option | Default | Description |
-|---|---|---|
+| ---| ---| --- |
 | `sourceSheetName` | `"Algorithm"` | Sheet with the algorithm. |
 | `targetSheetName` | `"Description"` | Sheet for the generated report. |
 | `sourceColumn` | `"B"` | Markers and Test GUID links. |
@@ -45,7 +45,7 @@ many requests).
 The scripts assume the following layout on the source sheet:
 
 | Column | Content |
-|---|---|
+| ---| --- |
 | A | Test reference tokens, one per row |
 | B | Markers and Test GUID hyperlinks (`sourceColumn`) |
 | C | Boolean condition expressions below the `stopMarker` row |

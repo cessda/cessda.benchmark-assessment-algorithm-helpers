@@ -10,7 +10,7 @@ The scripts are in the [scripts](scripts) directory. Together they add a
 **FAIR Metrics** menu to the spreadsheet with three actions:
 
 | Menu item | Purpose |
-|---|---|
+| ---| --- |
 | Validate Test References | Checks tokens, expressions and Test GUID links |
 | Validate Guidance URLs | Checks that guidance links are present and work |
 | Generate Report | Builds a report of tests, metrics and descriptions |

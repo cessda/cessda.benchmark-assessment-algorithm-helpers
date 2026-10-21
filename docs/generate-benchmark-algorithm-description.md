@@ -143,8 +143,7 @@ execution log.
 - `CONFIG` from [MenuAndConfig.gs](menu-and-config.md)
 - `extractUrlFromFormula()`, defined here, is also used by
   [ValidateTestReferences.gs](validate-test-references.md)
-- `findStartRowFromArray()` is declared both here and in `MenuAndConfig.gs`
-  with identical behaviour
+- `findStartRowFromArray()` from `MenuAndConfig.gs`
 
 ## Troubleshooting
 

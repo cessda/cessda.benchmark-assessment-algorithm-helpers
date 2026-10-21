@@ -85,9 +85,6 @@ every run.
 `columnLetterToIndex()` and `indexToColumnLetter()` are also used by
 [CheckUrls.gs](check-urls.md).
 
-`alertAndReturn()` is declared twice in this file with the same behaviour;
-the later declaration takes effect. It is safe to remove one of them.
-
 ## Dependencies
 
 - `CONFIG` and `findStartRowFromArray()` from

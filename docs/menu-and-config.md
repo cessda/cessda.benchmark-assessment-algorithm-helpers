@@ -34,7 +34,7 @@ code needs to change.
 | `stopMarker` | `"Description"` | Cell text that ends the Test GUID block. |
 | `requestDelayMs` | `1000` | Pause between HTTP requests, in milliseconds. |
 | `maxConsecutiveEmpty` | `3` | Consecutive empty cells that end a block. |
-| `metricNameJsonPath` | `"metadata.name"` | Legacy; no longer used. |
+| `guidanceColumn` | `"F"` | Column with guidance links. |
 | `fetchFailures` | `[]` | Working list populated at run time; do not edit. |
 
 Increase `requestDelayMs` if the remote servers respond with HTTP 429 (too
@@ -63,9 +63,8 @@ Returns the 1-based row number immediately after the `startMarker` row, or
 `null` if the marker is not found. It searches an array that has already been
 read from the sheet, which avoids one API call per cell.
 
-The same function is also declared in `GenerateBenchmarkAlgorithmDescription.gs`
-with identical behaviour. Apps Script shares one global scope across all files
-in a project, so only one definition takes effect.
+Apps Script shares one global scope across all files in a project, so the
+other scripts call this function directly.
 
 ## Dependencies
 

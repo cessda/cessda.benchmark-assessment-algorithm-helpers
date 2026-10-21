@@ -40,7 +40,7 @@ The script uses these locations, derived from `CONFIG` in
 | Source sheet | `CONFIG.sourceSheetName` |
 | Stop marker | `CONFIG.stopMarker` in `CONFIG.sourceColumn` |
 | Condition column | The column after `CONFIG.sourceColumn` (C) |
-| Guidance column | Column F (fixed in the script) |
+| Guidance column | `CONFIG.guidanceColumn` (F) |
 
 The condition region starts on the row after the stop marker. The script stops
 after `CONFIG.maxConsecutiveEmpty` consecutive empty condition cells. Rows
@@ -87,5 +87,5 @@ accepted as a fallback.
 
 - URLs are fetched one at a time, so a long list can approach the Apps Script
   execution time limit. If it times out, shorten the list.
-- Column F is hard-coded. To use a different column, change
-  `guidanceColLetter` in the script.
+- The guidance column defaults to F. To use another column, change
+  `guidanceColumn` in `CONFIG`.

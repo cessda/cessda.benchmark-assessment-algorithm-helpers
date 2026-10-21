@@ -59,7 +59,7 @@ See [Semantic Versioning](https://semver.org/) for guidance.
 
 ## Contributors
 
-You can find the list of contributors in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
+The list of contributors is in the [CONTRIBUTORS](CONTRIBUTORS.md) file.
 
 ## License
 

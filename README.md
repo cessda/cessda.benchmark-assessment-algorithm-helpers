@@ -1,5 +1,8 @@
 # CESSDA Benchmark Assessment Algorithm helpers
 
+[![SQAaaS badge shields.io](https://img.shields.io/badge/sqaaas%20software-silver-lightgrey)](https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/cessda.benchmark-assessment-algorithm-helpers.git.assess.sqaaas/main/.report/assessment_output.json "SQAaaS silver badge achieved")
+
+
 This repository contains Google Apps Script helpers for working with a Google
 Benchmark Assessment Algorithm spreadsheet. They validate the algorithm and
 generate a report describing the tests and metrics it uses.

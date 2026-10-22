@@ -1,6 +1,6 @@
 /**
 
- * @file GenerateMetricsReport.gs
+ * @file GenerateBenchmarkAlgorithmDescription.gs
 
  * @description Google Apps Script that generates a FAIR Benchmark Assessment report
 
